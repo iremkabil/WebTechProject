@@ -1,0 +1,46 @@
+%info-shared{
+    display: grid;
+    gap: 1.2rem;
+    
+}
+%info-image-shared{
+    border: 1px solid $medium-color;
+    padding: .5rem;
+    border-radius: 1px; 
+    height: 250px;
+}
+%info-bio-shared{
+    border: 1px solid $medium-color;
+    padding: .5rem;
+    border-radius: 1px; 
+    height: 250px;
+}
+
+#hakkimda {
+    &-a {
+        .info-right {
+            @extend  %info-shared;
+            grid-template-columns: 1fr 2fr;
+
+            &__image{
+                @extend %info-image-shared;
+            }
+            &__bio{
+                @extend %info-bio-shared;
+            }
+        }
+        .info-left {
+            @extend  %info-shared;
+            grid-template-columns: 2fr 1fr;
+
+            &__image{
+                @extend %info-image-shared;
+            }
+            &__bio{
+                @extend %info-bio-shared;
+            }
+        }
+        
+
+    }
+}
