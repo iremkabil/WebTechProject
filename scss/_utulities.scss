@@ -19,7 +19,7 @@
 
     &-primary{
         @extend %btn-shared;
-        color: $dark-color;
+        color:#fff;
         background-color: $primary-color;
     }
     &-secondary{
@@ -76,7 +76,7 @@ input[class^='btn-']:hover{
         color: $primary-color;
     }
     &-secondary{
-        color: $secondary-color;
+        color: $secondary-color !important;
     }
     &-medium{
         color: $medium-color;
@@ -93,8 +93,8 @@ input[class^='btn-']:hover{
         background-color: $dark-color;
     }
     
-    &-primary{
-        background-color: $primary-color;
+    &-pri{
+        background-color: $primary-color !important;
     }
     &-light{
         background-color: $light-color;
