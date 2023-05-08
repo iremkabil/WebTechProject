@@ -1,0 +1,23 @@
+#sehrim {
+
+    &-a{
+        .carousel-inner .carousel-item{
+            height:70vh  ;
+        }
+    }
+
+    &-b{
+        margin: auto;
+        .ilce{
+            img{
+                height: 15rem;
+                width: 25rem;
+            }
+
+            .article-col{
+                margin: 3rem 0 !important;
+            }
+        }
+    }
+
+}

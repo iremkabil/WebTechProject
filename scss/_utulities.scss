@@ -1,15 +1,15 @@
 .container{
     max-width: $max-width;
     padding: 0 1.4rem;
-    margin: auto;
+    margin:auto !important;
 }
 
 //buttons
 %btn-shared{
     display: inline-block;
-    padding: .7rem 2rem;
+    padding: .5rem 2rem;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     transition: all .5s;
     border: none;
     cursor:pointer;
@@ -22,6 +22,11 @@
         color: $dark-color;
         background-color: $primary-color;
     }
+    &-secondary{
+        @extend %btn-shared;
+        color: $dark-color;
+        background-color: $secondary-color;
+    }
     &-light{
         @extend %btn-shared;
         color: $dark-color;
@@ -33,11 +38,54 @@
         background-color: $dark-color;
     }
 }
+.btn{
+
+    &-primary:hover{
+        @extend %btn-shared;
+        color: $medium-color;
+        background-color: $dark-color;
+    }
+    &-secondary:hover{
+        @extend %btn-shared;
+        color: $medium-color;
+        background-color: $dark-color;
+    }
+    &-light:hover{
+        @extend %btn-shared;
+        color: $light-color;
+        background-color: $dark-color;
+    }
+    &-dark:hover{
+        @extend %btn-shared;
+        color: $medium-color;
+        background-color: $primary-color;
+    }
+}
+
+
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover{
-    background-color: $primary-color;
+    background-color: $primary-color !important;
 }
+
+// text-color
+
+.text{
+    &-primary{
+        color: $primary-color;
+    }
+    &-secondary{
+        color: $secondary-color;
+    }
+    &-medium{
+        color: $medium-color;
+    }
+    &-dark{
+        color: $dark-color;
+    }
+}
+
 //background
 
 .bg{
@@ -50,6 +98,9 @@ input[class^='btn-']:hover{
     }
     &-light{
         background-color: $light-color;
+    }
+    &-medium{
+        background-color: $medium-color;
     }
 }
 //padding
@@ -82,13 +133,41 @@ input[class^='btn-']:hover{
         margin: 4rem 0;
     }
 }
+.mx{
+    &-1{
+        margin: 0 1rem ;
+    }
+    &-2{
+        margin: 0 2rem ;
+
+    }
+    &-3{
+        margin: 0 3rem ;
+
+    }
+    &-4{
+        margin: 0 4rem ;
+
+    }
+}
+.mt{
+    &-1{
+        margin-top: 1rem;
+    }
+    &-2{
+        margin-top: 2rem;
+    }
+    &-3{
+        margin-top: 3rem;
+    }
+}
 
 .text-center {
     text-align: center;
 }
 .section-title {
-    font-size: 2;
-    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    padding: 1rem 0;
     text-transform: uppercase;
     text-align: center;
 }
@@ -96,7 +175,7 @@ input[class^='btn-']:hover{
     height: 3px;
     width: 3rem;
     background-color: $primary-color;
-    margin: 0 auto 1rem auto;
+    margin:  1rem auto;
 } 
 .lead {
     font-size: 1.4rem;

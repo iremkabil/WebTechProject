@@ -7,27 +7,32 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>sehrim</title>
 </head>
 <body>
         
     <!-- header -->
-    <header id="header__home">
+    <header id="header__inner">
         <div class="main">
             <div class="main-logo">
-                <a href="index.html" >WebTechProject</a>
+                <a href="index.html" >İrem Kabil</a>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav__items">
-                    <li><a href="hakkimda.html">Hakkımda</a></li>
                     <li><a href="ozgecmis.html">Özgeçmiş</a></li>
-                    <li><a href="sehrim.html" class=" active">Şehrim</a></li>
+                    <li ><a href="sehrim.html"class="active">Şehrim</a></li>
+                    <li><a href="takim.html">Takımımız</a></li>
+                    <li><a href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
                     <li><a href="iletisim.html">İletişim Sayfası</a></li>
-                    <li><a href="miras.html">Mirasımız</a></li>
-                    <li><a href="ulas.html">Bana Ulaşın</a></li>
+
                 </ul>
             </nav>
             <div class="main-login">
@@ -35,23 +40,309 @@
             </div>
         </div>
 
+    </header>
 
-        <div class="header-content">
+    <section id="sehrim-a" class="text-center py-2">
+        <div class="container">
+            <h2 class="section-title">
+                Şehrim Sakarya
+                <div class="border-bottom"></div>
+            </h2>
+           
+            <div class="container ">
+
+                <div class="carousel slide carousel-fade " data-bs-ride="carousel" id="slider1">
+
+                    <ol class="carousel-indicators ">
+                        <li data-bs-target="#slider1" data-bs-slide="0" class="active"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#slider1" data-bs-slide-to="4"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <a href="#sapanca">
+                                <img src="img/sapanca-golu.webp" class="d-block w-100" alt="">
+                            </a>
+                            
+                            <div class="carousel-caption">
+                                <h2>Sapanca</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <a href="#karasu">
+                                <img src="img/karasu.webp" class="d-block w-100" alt="">
+                            </a>
+                            <div class="carousel-caption">
+                                <h2>Karasu</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <a href="#serdivan">
+                                <img src="img/serdivan.webp" class="d-block w-100" alt="">
+                            </a>
+                            <div class="carousel-caption">
+                                <h2>Serdivan</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <a href="#akyazi">
+                                <img src="img/akyazi.webp" class="d-block w-100" alt="">
+                            </a>
+                            <div class="carousel-caption">
+                                <h2>Akyazi</h2>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="6000">
+                            <a href="#acarlar">
+                                <img src="img/acarlar-longozu.webp" class="d-block w-100" alt="">
+                            </a>
+                            <div class="carousel-caption">
+                                <h2>Acarlar Longozu</h2>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
 
         </div>
-    </header>
+    </section>
+
+    <section id="sehrim-b" class="text-center py-2">
+        <div class="container bg-medium my-1">
+            <div id="sapanca" class=" ilce my-3">
+                <div class="row">
+                    <div class="col-lg-12 my-3 ">
+                        <h2>Sapanca</h2>
+                        <p>Sakarya'nın en turistik noktalarından biri olan ve Sapanca Gölü kenarında uzanan Sapanca ilçesi, hem doğa gezileri hem de tatiller için şehrin en çok tercih edilen destinasyonu. Sapanca Gölü çevresinde sıralanan bungalov oteller, butik oteller, doğa otelleri, kır bahçeleri ve yürüyüş yolları ile her mevsim doğa severler tarafından ziyaret edilen Sapanca, Sakarya’ya yaklaşık 20 kilometre uzaklıkta.
+    
+                            Uzun tarihi boyunca bölgeye hakim olan pek çok medeniyetlerden izler taşıyan ilçede Mimar Sinan'ın önemli eserlerinden biri olan Rüstem Paşa Camii, 1892 yılında Abdülmecit döneminde inşa ettirilen Rahime Sultan Camii ve 1885 yılı Osmanlı dönemi mimari eseri olan Hasan Fehmi Paşa Camii gibi tarihi hazineleri yakından görebilirsiniz.
+                            
+                            Sapanca Gölü, Aygır Deresi, Maşukiye’de göl ve dere kenarlarında hizmet veren balık restoranları ile sadece yaz aylarında değil her mevsim hafta sonları, İstanbul ve Bursa gibi büyük şehirlerden gelen tatilciler tarafından ziyaret edilen Sapanca, Türkiye'nin en popüler kış tatili merkezlerinden Kartepe Kayak Merkezi’ne de sadece 25 kilometre uzaklıkta. İlçeye Sakarya Otogarı’nda her saat bulabileceğiniz minibüsler ve otobüslerle 30 dakikada kolayca gidebilirsiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 my-3">
+                        <article class="article-col">
+                            <h3>Kırkpınar</h3>
+                            <p>Sapanca Gölü kenarında uzanan Kırkpınar ilçesi; göl manzaralı villaları, bungalovları, orman köşkleri, doğa otelleri ile yılın her mevsimi ve hafta sonları tatil yapmak için tercih ediliyor. Sapanca Gölü’nün çevresini saran yürüyüş yollarında ve seyir teraslarında harika fotoğraflar çekebileceğiniz Kırkpınar gezinizde serin havada organik ürünlerle kahvaltılar yapabilir ve balık restoranlarında taze göl balıklarını yöresel mezelerle birlikte tadabilirsiniz. Çerkez göçmenler tarafından kurulan Kırkpınar, zengin yöresel yemek seçenekleriyle Sakarya’da gastronomi meraklılarının da en sık ziyaret ettiği yerlerin başında yer alıyor.
+    
+                                Büyüleyici Sapanca Gölü manzaralarının yanı sıra serin ve temiz havasıyla yılın yorgunluğunu atabileceğiniz en güzel yerlerden olan Kırkpınar’da 2003 yılında ziyarete açılan Murat Uyar Botanik Parkı'na uğrayarak yüzlerce çeşit bitki türü arasında yürüyüşler yapabilir, kır bahçelerinde mola verebilir ve mesire alanlarında çocuklarınızla piknik yaparak güzel bir gün geçirebilirsiniz.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/kırkpınar-sapanca.jpeg" alt="">
+                       <div class=" my-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24199.236353242417!2d30.2185435!3d40.6980999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cca8f36b02db3b%3A0x6db9dd0038c5adb4!2zS8SxcmtwxLFuYXIgU2FoaWxp!5e0!3m2!1str!2str!4v1683287382593!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 my-3 ">
+                        <article class="article-col">
+                            <h3>İstanbuldere</h3>
+                            <p>Sakarya'nın Sapanca ilçesine bağlı çok popüler bir doğa tatili cenneti olan İstanbuldere, buz gibi suları ve el değmemiş güzellikleri ile ünlü derelerin kenarında kurulmuş balık çiftlikleri ile İstanbul gibi büyük şehirlerden gelen tatilciler tarafından, özellikle hafta sonları çok ziyaret ediliyor.
+    
+                                İstanbul'a 2 saat, Sakarya’ya ise sadece 30 dakika uzaklıkta yer alan ve minibüslerle kolayca gidebileceğiniz İstanbuldere; şehrin karmaşasından uzakta endemik bitki türleri ve çam ormanları arasında dinlenmek, hamaklarda yorgunluk atmak, dere üstündeki iskelelerde taze balıklar ve yöresel mezeler tatmak için gidebileceğiniz en sevilen yerler arasında. Çevresini saran irili ufaklı şelalelerde doğa yürüyüşlerine de çıkabileceğiniz İstanbuldere’nin serin havasında yaz aylarında serinleyebilir ve doğayla iç içe güzel bir gün geçirebilirsiniz.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/istanbuldere-sapanca.webp" alt="">
+         
+                       <div class=" my-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6054.520930644451!2d30.231109!3d40.646188499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cca660cd310957%3A0xd07c98d0ba709b44!2s%C4%B0stanbuldere%2C%2054600%20Sapanca%2FSakarya!5e0!3m2!1str!2str!4v1683288410537!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6 my-3 ">
+                        <article class="article-col">
+                            <h3>Sapanca Sanat Sokağı</h3>
+                            <p>Sakarya'nın en çok ziyaret edilen turistik ilçesi Sapanca'nın merkezinde yerli ve yabancı turistler tarafından mutlaka ziyaret edilen Sapanca Sanat Sokağı, renkli bir gezi deneyimi sunuyor. Yılın her dönemi kültür ve sanat etkinliklerinin düzenlendiği sokak, yol üstü kafeleri ve hediyelik eşya dükkanları ile günün her saati oldukça hareketli.
+    
+                                Yüzlerce çeşit yöresel ürünü incelemek, ilçe kadınlarının ürettiği el emeği göz nuru danteller ve el işi örgülerini satın almak veya keyifli bir akşam yürüyüşü yapmak için uğrayabileceğiniz sanat sokağında sanat atölyeleri ve workshoplar da düzenleniyor. Gezinizden sonra bir yol üstü kafesinde mola verebilir ve çayınızı yudumlarken sokak müzisyenlerini dinleyerek atmosferin tadını çıkarabilirsiniz.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/sapanca-sanat-sokagi.webp" alt="">
+         
+                       <div class=" my-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0421925319033!2d30.26961709999999!3d40.6950684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaf3cbbe55fb3%3A0x86df23b7707d2266!2sSapanca%20Sanat%20Soka%C4%9F%C4%B1!5e0!3m2!1str!2str!4v1683289224545!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container bg-medium my-1">
+            <div id="karasu" class="ilce row my-3">
+                <div class="col-lg-12 my-3">
+                    
+                    <h2>Karasu</h2>
+                    <p>Sakarya'nın en sevilen plajlarından Karasu Plajı'na da ev sahipliği yapan Karasu ilçesi, Sakarya'ya sadece 55 kilometre uzaklıkta yer alıyor. 20 kilometrelik sahiliyle Türkiye'nin en uzun ikinci sahiline sahip olan ve yaz aylarında sadece Sakarya'dan değil Türkiye'nin dört bir yanından gelen tatilcileri misafir eden Karasu; Karadeniz manzaralı butik otelleri, apart otelleri, aile pansiyonları, restoranları ve kafeleriyle turizm olanakları bakımından oldukça gelişmiş durumda.
+
+                        Türkiye'nin de en önemli doğal güzelliklerinden biri olan Acarlar Longozu’na oldukça yakın bir konumda bulunan Karasu'da yılın her mevsimi düzenlenen rehberli gezilerle büyüleyici longoz ormanlarını gezebilir, Küçükboğaz Gölü'nde ise tekne ve sandallarla gezilere çıkabilir veya balık avlama turlarına katılabilirsiniz. Göl çevresindeki balık çiftlikleri için de çok ziyaret edilen Karasu’nun uzun sahil yolunda Karadeniz esintileri eşliğinde dinlendirici akşam yürüyüşlerine çıkabilir veya ilçenin en sevilen gezi alanı olan Yenimahalle sahilinde rengarenk balıkçı teknelerine karşı asırlık çam ağaçlarının altında sahil kafelerinde bir mola verebilirsiniz.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 my-3">
+                        <article class="article-col">
+                            <h3>Karasu Sahil Parkı</h3>
+                            <p>20 kilometre boyunca uzanan ince kumlu sahili ile Ege ve Akdeniz aratmayan Sakarya'nın Karasu ilçesinde, Doğu Karadeniz Caddesi üzerinde yer alan Karasu Sahil Parkı, şehrin çok popüler gezi alanlarından biri. Büyüleyici Karadeniz manzaraları arasında ilerleyen yürüyüş parkurları, yol üstü kafeleri, restoranları ve otelleri ile özellikle yaz aylarında çok hareketli olan sahil parkının 300 metre uzunluk ve 100 metre genişliğe sahip Karasu Sahil Parkı Plajı’nda da ince kumlara güneşlenebilir ve tertemiz denizin tadını çıkarabileceğiniz. Akşam yürüyüşlerine çıkmak ve spor yapmak için de en çok ziyaret edilen yerlerden olan Karasu Sahil Parkı’nda kızıl gün batımı eşliğinde bir mola vererek manzarayı izleyebilirsiniz.</p>
+                        </article>   
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/karasu-sahil-park.webp" alt="">
+                        <div class="my-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.1027817479844!2d30.6937028!3d41.11044629999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409ddad1f6e32e27%3A0xfee9ef4490e93033!2sKarasu%20Sahil%20Park!5e0!3m2!1str!2str!4v1683289716075!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container bg-medium my-1">
+            <div id="serdivan" class="ilce row my-3">
+                <div class="col-lg-12 my-3">
+                    
+                    <h2>Serdivan</h2>
+                    <p>Adapazarı merkezine sadece 6 kilometre uzaklıkta yer alan ve keyifli günübirlik geziler yapabileceğiniz Serdivan, hem doğal güzellikleri hem de bilim merkezi ve tarihi hazineleri ile ilgi çekiyor. Sakarya Gölü kenarında 8,5 kilometrelik kıyı şeridine sahip küçük bir ilçe olan Sedirvan, son yıllarda deniz seviyesinden 250 metre yükseklikteki Taraklı Karagöl Yaylası'nda benzersiz doğal güzellikler üstünde düzenlenen yamaç paraşütü etkinlikleri ile de yerli ve yabancı turistleri kendine çekiyor.
+
+                        Çocuklu ailelerin mutlaka ziyaret etmesini önerdiğimiz Planetaryum (Gezegen Evi) ise her yaştan çocuklara ve gençlere bilim ile teknolojiyi eğlenceli bir şekilde öğretmeyi amaçlayan pek çok sergi, atölye ve etkinliğe sahip. Yemyeşil yaylalardan küçük göllere, derelere ve çam ormanlarına kadar sıcak yaz sıcaklarında keyifli doğa gezileri yapabileceğiniz birçok sevilen alana sahip Serdivan’da 2010 yılında hizmete açılan Serdivan AVM’de ise sinema salonları, mağazalar ve kafelerde eğlenceli bir mola verebilirsiniz.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 my-3">
+                        <article class="article-col">
+                            <h3>Serdivan Gölpark</h3>
+                            <p>Sapanca Gölü'nü kenarında yer alan Serdivan Gölpark, eşsiz göl manzarası ve oksijen seviyesi yüksek havasıyla yılın yorgunluğunu atmak için Sakarya'da mutlaka uğramanız gereken yerler arasında. Şehir merkezine sadece 10 kilometre uzaklıkta olduğu için minibüslerle kısa sürede gidebileceğiniz Gölpark, 8,5 kilometrelik kıyı şeridi ile yürüyüş yapmak için de en çok tercih edilen yerler arasında.
+
+                                Gölün içine doğru uzanan ahşap iskeleler, seyir terasları, kır bahçeleri ve kilometrelerce uzanan yürüyüş yollarıyla her mevsim çok popüler olan Serdivan Gölpark, yaz aylarında düzenlenen konser ve tiyatro gösterileri ile de oldukça hareketli. Geniş çocuk oyun bahçeleri ve mesire alanlarıyla çocuklu ailelerin Sakarya’da en sevdiği yerlerden biri olan Gölpark’a Serdivan ilçesinden ücretsiz servislerle de ulaşmanız mümkün.</p>
+                        </article>   
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/serdivan-golpark.webp" alt="">
+                        <div class="my-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1882305511185!2d30.319032200000002!3d40.7358835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccaddd3f8060b1%3A0xe0816c8b98f389ba!2sSerdivan%20G%C3%B6lpark!5e0!3m2!1str!2str!4v1683301274727!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container bg-medium my-1">
+            <div id="akyazi" class="ilce row my-3">
+                <div class="col-lg-12 my-3">
+                    <h2>Akyazı</h2>
+                    <p>Sakarya'ya sadece 8 kilometre uzaklıkta, çam ormanları ile çevrili dağlar arasında yer alan Akyazı ilçesi, hem yemyeşil yaylaları hem de şifalı kaynak sularında dinlenebileceğiniz kaplıcalarıyla doğa ve sağlık turizmi açısından oldukça gelişmiş bir turistik ilçe.
+
+                        Kuzuluk Kaplıcaları ile sadece Sakarya'nın değil, Türkiye'nin de her şehrinden şifa arayan insanları kendine çeken Akyazı’da mineral bakımından çok zengin kaplıca sularının tadını çıkarabileceğiniz termal oteller, termal havuzlar, aile havuzları ve sağlık tesisleri gibi pek çok olanak bulabilirsiniz. Kuzuluk Kaplıcaları, sadece şifaları suları ile değil, aynı zamanda oksijen seviyesi yüksek tertemiz havasıyla solunum sorunu gibi pek rahatsızlığın tedavisine de yardımcı oluyor.
+                        
+                        Deniz seviyesinden 1400 metre yükseklikteki yayla evleriyle fotoğraf gezilerinin değişmez adreslerinden biri haline gelen Akyazı’da yılın her mevsim rehberli doğa yürüyüşleri, bisiklet turları, dağcılık ve kampçılık gibi pek çok etkinlik düzenleniyor. Butik otelleri, apart otelleri, çam ormanları içindeki doğa ve bungalov otelleri ile her yıl yüz binlerce kişiyi ağırlayan Akyaka, günlük gezilerinin yanında kalabalıklardan uzakta sessiz ve sakin bir ortamda yılın yorgunluğunu atmak isteyenlerin de kesinlikle uğraması gereken bir yer.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 my-3">
+                        <article class="article-col">
+                            <h3>Kuzuluk Kaplıcaları</h3>
+                            <p>Doğal güzelliklerinin yanı sıra sağlık turizmi konusunda da gelişen Sakarya'dan en çok ziyaret edilen yerlerinden biri olan Kuzuluk Kaplıcaları, Akyazı ilçesinde şehir merkezine yaklaşık 35 kilometre uzaklıkta yer alıyor. Sadece Türkiye'den değil dünyanın her yerinden insanların şifa bulmak için ziyaret ettiği kaplıcada termal oteller, kaplıca evleri ve sağlık tesisleri hizmet veriyor.
+
+                                25 derecelik kükürtlü hidrojenli ve karbondioksit bakımından zengin Kuzuluk Kaplıcaları sularının dolaşım sistemi rahatsızlıklarından sindirim sistemi sorunlarına, bel ağrılarından spor yaralanmalarına kadar pek çok rahatsızlığa iyi geldiği biliniyor. Banyo kürü ve içme suyu olarak kullanılabilen şifalı sularda hem yılın yorgunluğunu atabilir hem de hastalıklarınız için şifa bulabilirsiniz. Sakarya'da her saat bulabileceğiniz Akyazı minibüsleriyle veya termal otellerin servisleri ile Kuzuluk Kaplıcaları'na 30 dakikada kolayca gidebilirsiniz.</p>
+                        </article>   
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/kaplicalar-akyazi.webp" alt="">
+                        <div class="my-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24225.028173696453!2d30.64824095!3d40.62704754999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccce99510cebd7%3A0x7d8d55b313a50267!2sKuzuluk%2C%2054405%20Akyaz%C4%B1%2FSakarya!5e0!3m2!1str!2str!4v1683301561131!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 my-3">
+                        <article class="article-col">
+                            <h3>Keremali Yaylası</h3>
+                            <p>Sakarya'nın doğa tatilleri merkezi Akyazı'da gezebileceğiniz başka bir sevilen gezi alanı da Keremali Dağı eteklerine uzanan yemyeşil Keremali Yaylası. Akyazı’ya sadece 20 kilometre uzaklıkta bulunan yayla, yılın her mevsimi doğa yürüyüşü, kampçılık, dağcılık, kaya tırmanma, fotoğrafçılık gibi aktiviteler için ziyaret yerli ve yabancı turistler tarafından ziyaret ediliyor.
+
+                                Sessiz ve sakin bir ortamda yılın bütün yorgunluğunu atabileceğiniz Keremali Yaylası, dağ eteklerinde benzersiz manzaralar sunan yayla evleriyle de ünlü. Kış aylarında beyaza bürünen ahşap yayla evleri ve çam ormanları arasında harika fotoğraflar çekebileceğiniz yayla, Çamlıca Gölü'nün masmavi sularının yemyeşil ormanlarla birleştiği manzarası ile de kartpostalları süslüyor.</p>
+                        </article>   
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/keremali-akyazi.webp" alt="">
+                        <div class="my-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.262483822346!2d30.746894000000005!3d40.646144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccd2fa713a0769%3A0x7b49421458e7abaf!2sKEREMAL%C4%B0%20YAYLASI!5e0!3m2!1str!2str!4v1683301693685!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 my-3">
+                        <article class="article-col">
+                            <h3>Acelle Yaylası</h3>
+                            <p>Sakarya’ya 70 kilometre, Akyazı ilçesine ise sadece 40 kilometre uzaklıkta yer alan Acelle Yaylası, buz gibi derelerin sardığı kartpostal güzelliğindeki yemyeşil manzarasıyla ünlü. Yayla, sadece bahar ve yaz aylarında değil, büyüleyici kar manzaralarından dolayı kış aylarında da sıkça ziyaret ediliyor.
+
+                                Tam ortasından akan Enişte Deresi’yle büyüleyici manzarasıyla tamamlanan Acelle Yaylası’nda onlarca çeşit ağaç ve bitki çeşidi arasında uzanan yürüyüş parkurları ve mesire alanlarında tertemiz havada yenilenebilir, yayla evleri ve bungalov otellerde konaklayabilir, kır bahçelerinde organik ürünlerle köy kahvaltıları yapabilir veya dere kenarında hizmet veren balık restoranlarının taze balıkların tadına bakabilirsiniz.</p>
+                        </article>   
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/acelle-akyazi.webp" alt="">
+                        <div class="my-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.0462956707966!2d30.623992199999996!3d40.518467799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccce9bf098958f%3A0x3e168dc281249dba!2sAkyaz%C4%B1%20Acelle%20Yaylas%C4%B1!5e0!3m2!1str!2str!4v1683301945958!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bg-medium my-1">
+            <div id="acarlar" class="ilce row my-3">
+                <div class="col-lg-12 my-3">  
+                    <h2>Acarlar Longozu</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 my-3">
+                        <article class="article-col">
+                            <p>Türkiye'nin en önemli tabiat harikalarından biri ve en büyük longoz ormanı olan Acarlar Longozu, 7,5 kilometre boyunca uzanan benzersiz manzarasıyla ziyaretçilerini büyülüyor. Doğa severlerin kesinlikle keşfe çıkması gereken longoz ormanı, Okçu Deresi manzaraları arasında ilerleyen yürüyüş yolları, donanımlı kamp alanları ve seyir terasları ile görülmeye değer güzellikte.
+
+                                1562 hektardan büyük bir yeşil alanı kapsayan Acarlar Longozu’nu yılın her dönemi düzenlenen rehberli doğa gezileri, fotoğraf safarileri, balık avlama turları ve kuş gözlemciliği etkinlikleri ile keşfe çıkarak Sakarya gezinizin en güzel fotoğraflarını burada çekebilirsiniz.</p>
+                        </article>   
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img src="img/" alt="">
+                        <div class="my-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3005.7600097688114!2d30.5518154!3d41.1179321!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1str!2str!4v1683302423177!5m2!1str!2str" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
     <footer id="main-footer">
         <div class="footer-content container">
             <p>Copyright &copy; 2023. All Rights Reserved.</p>
             <div class="social">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
+                <a href="https://github.com/iremkabil"><i class="fab fa-brands fa-github"></i></a>
+                
+                <a href="mailto:iremkabil54@gmail.com"><i class="fab fa-thin fa-at"></i></a>
+
+                <a href="https://www.linkedin.com/in/irem-kabil-6387b926b/"><i class="fab fa-brands fa-linkedin"></i></a>
+
             </div>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 </body>
 </html> 

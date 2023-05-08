@@ -7,17 +7,27 @@
     border: 1px solid $medium-color;
     padding: .5rem;
     border-radius: 2px; 
-    height: 250px;
+    height: 315px;
 }
 %info-bio-shared{
     border: 1px solid $medium-color;
     padding: .5rem;
     border-radius: 2px; 
-    height: 250px;
+    height: 315px;
 }
 
-#hakkimda {
-    &-a {
+#takim {
+    font-size: .6rem;
+    &-b{
+
+        .header img{
+            height: 20rem;
+            width: 40rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .info-right {
             @extend  %info-shared;
             grid-template-columns: 1fr 2fr;
@@ -37,10 +47,20 @@
                 @extend %info-image-shared;
             }
             &__bio{
+                p{
+                    display: block;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+               
                 @extend %info-bio-shared;
             }
         }
-        
-
+        .info{
+            @extend  %info-shared;
+            border: 1px solid $medium-color;
+            padding: .5rem;
+            border-radius: 2px; 
+        }
     }
 }

@@ -7,7 +7,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Prompt&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
@@ -18,16 +26,16 @@
     <header id="header__home">
         <div class="main">
             <div class="main-logo">
-                <a href="index.html" class=" active">WebTechProject</a>
+                <a href="index.html" class=" active">İrem Kabil</a>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav__items">
-                    <li><a href="hakkimda.html">Hakkımda</a></li>
                     <li><a href="ozgecmis.html">Özgeçmiş</a></li>
                     <li><a href="sehrim.html">Şehrim</a></li>
+                    <li><a href="takim.html">Takımımız</a></li>
+                    <li><a href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
                     <li><a href="iletisim.html">İletişim Sayfası</a></li>
-                    <li><a href="miras.html">Mirasımız</a></li>
-                    <li><a href="ulas.html">Bana Ulaşın</a></li>
+
                 </ul>
             </nav>
             <div class="main-login">
@@ -42,17 +50,79 @@
             <p>İrem Kabil 
                 <br>G221210027
             </p>
+            <br><br>
+            <button class="btn btn-primary"  onclick="window.location.href='#hakkimda-a'">Hakkımda</button>
         </div>
     </header>
+
+    <section id="hakkimda-a" class="text-center py-2">
+        <div class="container">
+            <h2 class="section-title">
+                Hakkımda
+                <div class="border-bottom"></div>
+            </h2>
+
+            <div class="info-right my-5">
+                <img src="img/devfest-seminer.jpg" alt="" class="info-right__image">
+                <div class="info-right__bio ">
+                    <h3>Eğitim ve Etkinlikler</h3>
+                    <br>
+                    <p>Liseyi Akyazı Eyyup Genç Fen Lisesi'nde okuduktan sonra üniversitede Sakarya Üniversitesi'nde devam ediyorum. <br>Şuanda Sakarya Üniversitesi bilgisayar mühendisliği 1. sınıf öğrencisiyim.</p><br>
+                    <p>Yazılım adına katıldığım ilk büyük etkinlik Google Developer Festival'di. Bu etkinlik yazılıma başlamadan önce yazılıma genel anlamıyla bilgi sahibi olmama büyük katkı sağladı.</p>
+                </div>
+            </div>
+            <div class="info-left my-5">
+                <div class="info-left__bio ">
+                    <h3>Stajlar</h3>
+                    <p>İlk staj deneyimim Intertech' in 1. sınıflar için düzenlediği FirstTech Staj Programı oldu. Bu stajla yazılım ve teknoloji dünyasını, iş analistliğini, çalışma metadojilerini öğrenmekle beraber Intertech hakkında da kapsamlı bilgi sahibi oldum.</p><br>
+                    <p>Intertech' teki stajım devam ederken Shopinart ekibine kabul edildim.</p>
+                    
+                </div>
+                <img src="img/shopinart.jpg" alt="" class="info-left__image">
+            </div>
+            <div class="info-right my-5">
+                <img src="img/shopinart-team.jpg" alt="" class="info-right__image">
+                <div class="info-right__bio ">
+                    <h3><a href="https://shopinart.com/">SHOPINART</a></h3>
+                    <p>Shopinart' taki gönüllü stajımla diğer staja nazaran daha aktif çalışarak samimi ekiple beraber güzel deneyim edinmeye devam edeceğim. </p>
+                    <p>Daha detaylı bilgi için</p>
+                    
+                    <a href="https://www.linkedin.com/in/irem-kabil-6387b926b/" class="btn btn-secondary">LinkedIn Hesabım</a>
+                 
+                    <!-- <i class="fa-regular fa-right "></i> -->
+                    
+                </div>
+            </div>
+            
+            <div class="info-left my-5">
+
+                <div class="info-left__bio ">
+                    <h3>Kitaplar ve Ben</h3>
+                    <p>Düzenli Kitap okuma alışkanlığımı lisede oluşturdum. Olabildiğince farklı tarzdan farklı yazarlardan kitaplar okumaya çalışıyorum. <br> En sevdiğin kitabı seçmek kitap severler için oldukça zordur. Ancak beni en çok etkileyen kitaplara örnek verebilirim... 
+                        <ul>
+                            <li>Jack London - Yıldız Gezgini</li>
+                            <li>Jack London - Martin Eden</li>
+                            <li>İlhami Algör - Fakat Müzeyyen Bu Derin Bir Tutku</li>
+                        </ul>
+                    </p>
+                    
+                    
+                </div>
+                <img src="img/books.jpg" alt="" class="info-left__image">
+            </div>
+        </div>
+    </section>
     
     <footer id="main-footer">
         <div class="footer-content container">
             <p>Copyright &copy; 2023. All Rights Reserved.</p>
             <div class="social">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
+                <a href="https://github.com/iremkabil"><i class="fab fa-brands fa-github"></i></a>
+                
+                <a href="mailto:iremkabil54@gmail.com"><i class="fab fa-thin fa-at"></i></a>
+
+                <a href="https://www.linkedin.com/in/irem-kabil-6387b926b/"><i class="fab fa-brands fa-linkedin"></i></a>
+
             </div>
         </div>
     </footer>
