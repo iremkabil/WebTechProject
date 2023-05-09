@@ -3,9 +3,15 @@
         .form-fields {
             display: grid;
             grid-template-areas:
-                'name email phone',
-                'subject phone',
-                'message message',
+                // 'name email password'
+                // 'subject phone'
+                // 'message message'
+                // 'button button'
+                'name phone'
+                'email password'
+                'subject message'
+                'cinsiyet sehir'
+                // 'diller diller'
                 'button button';
             gap: 1rem;
             margin-bottom: 1rem;
@@ -24,13 +30,23 @@
             }
             .message {
                 grid-area: message;       
-                height: 180px;
+            }
+            .cinsiyet{
+                grid-area: cinsiyet;
+            }
+            .sehir{
+                grid-area: sehir;
             }
             .btn-dark {
                 grid-area: button;
             }
             .input {
                 padding: .5rem 1rem ;
+            }
+            .diller {
+                input{
+                    padding: 0 1rem;
+                }
             }
         }
     }
