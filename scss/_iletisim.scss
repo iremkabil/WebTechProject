@@ -11,7 +11,7 @@
                 'email password'
                 'subject message'
                 'cinsiyet sehir'
-                // 'diller diller'
+                'diller diller'
                 'button button';
             gap: 1rem;
             margin-bottom: 1rem;
@@ -32,11 +32,15 @@
                 grid-area: message;       
             }
             .cinsiyet{
-                grid-area: cinsiyet;
+                grid-area: cinsiyet; 
+                input{
+                    margin-left: 1rem;
+                }
             }
             .sehir{
                 grid-area: sehir;
             }
+
             .btn-dark {
                 grid-area: button;
             }
@@ -44,8 +48,9 @@
                 padding: .5rem 1rem ;
             }
             .diller {
+                grid-area: diller;
                 input{
-                    padding: 0 1rem;
+                    margin-left: 1rem;
                 }
             }
         }
