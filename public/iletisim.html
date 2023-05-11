@@ -46,7 +46,7 @@
             <div class="border-bottom"></div>
             <p class="lead">Lütfen formu doldurun...</p>
             <form  action="" method="">
-                <div class="form-fields">
+                <!-- <div class="form-fields">
                     <input type="text" class="name input" name="fullname" id="fullname" placeholder="name">
     
                     <input type="text" class="subject input" name="subject" id="subject" placeholder="subject">
@@ -69,12 +69,167 @@
                     </form>
                  
                     <form class="diller input">
-                        En sevdiğiniz programlama dili :   
+                        Kullandığınız programlama dilleri :   
                         <input type="checkbox" class="dil" name="c++" value="c++">   C++  
                         <input type="checkbox" class="dil" name="c#" value="c#">   C#
                         <input type="checkbox" class="dil" name="javascript" value="javascript">   Javascript
                         <input type="checkbox" class="dil" name="java" value="java">   Java
                         <input type="checkbox" class="dil" name="python" value="python">   Python
+                    </form>
+
+
+                    <form class="sehir input" >
+                        <label for="sehir">Yaşadığınız Şehir:</label>
+                        <select id="sehir" name="sehir">
+                          <option value="adana">Adana</option>
+                          <option value="adiyaman">Adıyaman</option>
+                          <option value="afyonkarahisar">Afyonkarahisar</option>
+                          <option value="agri">Ağrı</option>
+                          <option value="amasya">Amasya</option>
+                          <option value="ankara">Ankara</option>
+                          <option value="antalya">Antalya</option>
+                          <option value="artvin">Artvin</option>
+                          <option value="aydin">Aydın</option>
+                          <option value="balikesir">Balıkesir</option>
+                          <option value="bilecik">Bilecik</option>
+                          <option value="bingol">Bingöl</option>
+                          <option value="bitlis">Bitlis</option>
+                          <option value="bolu">Bolu</option>
+                          <option value="burdur">Burdur</option>
+                          <option value="bursa">Bursa</option>
+                          <option value="canakkale">Çanakkale</option>
+                          <option value="cankiri">Çankırı</option>
+                          <option value="corum">Çorum</option>
+                          <option value="denizli">Denizli</option>
+                          <option value="diyarbakir">Diyarbakır</option>
+                          <option value="edirne">Edirne</option>
+                          <option value="elazig">Elazığ</option>
+                          <option value="erzincan">Erzincan</option>
+                          <option value="erzurum">Erzurum</option>
+                          <option value="eskisehir">Eskişehir</option>
+                          <option value="gaziantep">Gaziantep</option>
+                          <option value="giresun">Giresun</option>
+                          <option value="gumushane">Gümüşhane</option>
+                          <option value="hakkari">Hakkari</option>
+                          <option value="hatay">Hatay</option>
+                          <option value="isparta">Isparta</option>
+                          <option value="mersin">Mersin</option>
+                          <option value="istanbul">İstanbul</option>
+                          <option value="izmir">İzmir</option>
+                          <option value="kars">Kars</option>
+                          <option value="kastamonu">Kastamonu</option>
+                          <option value="kayseri">Kayseri</option>
+                          <option value="kirklareli">Kırklareli</option>
+                          <option value="kirsehir">Kırşehir</option>
+                          <option value="kocaeli">Kocaeli</option>
+                          <option value="konya">Konya</option>
+                          <option value="kutahya">Kütahya</option>
+                          <option value="malatya">Malatya</option>
+                          <option value="manisa">Manisa</option>
+                          <option value="kahramanmaras">Kahramanmaraş</option>
+                          <option value="mardin">Mardin</option>
+                          <option value="mus">Muş</option>
+                          <option value="nevsehir">Nevşehir</option>
+                          <option value="nigde">Niğde</option>
+                          <option value="ordu">Ordu</option>
+                          <option value="rize">Rize</option>
+                          <option value="sakarya">Sakarya</option>
+                          <option value="samsun">Samsun</option>
+                          <option value="siirt">Siirt</option>
+                          <option value="sinop">Sinop</option>
+                          <option value="sivas">Sivas</option>
+                          <option value="tekirdag">Tekirdağ</option>
+                          <option value="tokat">Tokat</option>
+                          <option value="trabzon">Trabzon</option>
+                          <option value="tunceli">Tunceli</option>
+                          <option value="sanliurfa">Şanlıurfa</option>
+                          <option value="usak">Uşak</option>
+                          <option value="van">Van</option>
+                          <option value="yozgat">Yozgat</option>
+                          <option value="zonguldak">Zonguldak</option>
+                          <option value="aksaray">Aksaray</option>
+                          <option value="bayburt">Bayburt</option>
+                          <option value="karaman">Karaman</option>
+                          <option value="kirikkale">Kırıkkale</option>
+                          <option value="batman">Batman</option>
+                          <option value="sirnak">Şırnak</option>
+                          <option value="bartin">Bartın</option>
+                          <option value="ardahan">Ardahan</option>
+                          <option value="igdir">Iğdır</option>
+                          <option value="yalova">Yalova</option>
+                          <option value="karabuk">Karabük</option>
+                          <option value="kilis">Kilis</option>
+                          <option value="osmaniye">Osmaniye</option>
+                          <option value="duzce">Düzce</option>
+                        </select>
+                    </form>
+                      
+                
+                    <button type="submit" class="btn-dark">Submit</button>
+        
+                </div> -->
+                <div class="form-fields">
+                    <input type="text" class="form-control name input" name="fullname" id="fullname" placeholder="name">
+    
+                    <input type="text" class="form-control subject input" name="subject" id="subject" placeholder="subject">
+
+                    <div class="">
+                        <input type="email" class="form-control email input" name="email" id="email" placeholder="Email"  onchange="emailV();">
+                        <div class="valid-feedback">
+                            Kriterlere uyuyor
+                        </div>
+                        <div class="invalid-feedback">
+                            Alan boş yada Girdiğiniz bilgiler E mail formatında DEĞİL!!
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <input type="password" class="form-control password input" name="password" id="password" placeholder="password" onchange="sifreV();">
+                        <div class="invalid-feedback">
+                            Alan boş yada Şifre rakamdan başka karakter içeriyor
+                        </div>
+                        <div class="valid-feedback">
+                            Kriterlere Uyuyor
+                        </div>
+                    </div>
+        
+                    <input type="tel" class="form-control phone input" name="phone" id="phone" placeholder="phone">
+        
+                    <textarea name="message" class="form-control message input" id="message" placeholder="message"></textarea>
+
+                    <form class="cinsiyet input" >
+                         <div class="mt-2">
+                            Cinsiyetiniz :
+                            <input type="radio" name="cinsiyet" value="erkek" >   Erkek
+                            <input type="radio" name="cinsiyet" value="kadin">   Kadın
+                            <input type="radio" name="cinsiyet" value="diger">   Diğer    
+                         </div>                      
+                    </form>
+                 
+                    <form class="diller input">
+                        Kullandığınız programlama dilleri :   
+                        <!-- <input type="checkbox" class="custom-control-input" name="c++" value="c++">   C++  
+                        <input type="checkbox" class="custom-control-input" name="c#" value="c#">   C#
+                        <input type="checkbox" class="custom-control-input" name="javascript" value="javascript">   Javascript
+                        <input type="checkbox" class="custom-control-input" name="java" value="java">   Java
+                        <input type="checkbox" class="custom-control-input" name="python" value="python">   Python -->
+
+                        <div class="custom-control custom-radio">
+                            <input type="checkbox" id="js" name="js" class="custom-control-input" value="javascript" checked>
+                            <label class="custom-control-label" for="js">javascript</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="checkbox" id="c++" name="c++" class="custom-control-input" value="c++">
+                            <label class="custom-control-label" for="c++">C++</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="checkbox" id="c#" name="c#" class="custom-control-input" value="c#">
+                            <label class="custom-control-label" for="c#">c#</label>
+                        </div>
+                        <div class="custom-control custom-radio ">
+                            <input type="checkbox" id="python" name="python" class="custom-control-input" value="python">
+                            <label class="custom-control-label" for="python">Python</label>
+                        </div>
                     </form>
 
 

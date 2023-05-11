@@ -16,7 +16,8 @@
     <title>Document</title>
 </head>
 <body>
-        
+    <script src="validation.js"></script>
+    <script src="changeValidate.js"></script>
     <!-- header -->
     <header id="header__inner">
         <div class="main">
@@ -37,14 +38,61 @@
                 <button class="btn btn-dark main-nav__login"><a href="login.html" class=" active">Login</a></button>
             </div>
         </div>
-
-
-        <div class="header-content">
-
-        </div>
     </header>
 
-    <footer id="main-footer">
+    <section id="login" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Login</h2>
+            <div class="border-bottom"></div>
+            <p class="lead">Lütfen giriş yapınız...</p>
+            <!-- <form action="">
+                <div class="form-login">
+                    <div class="my-4">
+                        Email: CC@hotmail.com Şifre: 123
+                    </div>
+                    <input type="email" class="email input" name="email" id="email" placeholder="Email">
+
+                    <input type="password" class="password input" name="password" id="password" placeholder="password">
+
+                </div>
+            </form>
+            <button type="submit" class="btn-dark">Submit</button> -->
+            <form action="logingit.php" name="myForm" class="needs-validation form-login" onsubmit = "return validate();"  method="POST">
+                <div class="form-row my-3">Email: CC@hotmail.com   Şifre: 123
+                </div>
+                <div class="form-row my-3">
+                  <div class="col-lg-4 my-3">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" name="email" id="email" onchange="emailV();">
+                    <div class="valid-feedback">
+                      Kriterlere uyuyor
+                    </div>
+                    <div class="invalid-feedback">
+                      Alan boş yada Girdiğiniz bilgiler E mail formatında DEĞİL!!
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <label for="password">Şifre:</label>
+                    <input type="password"class="form-control" name="sifre" onchange="sifreV();">
+                    <div class="invalid-feedback">
+                      Alan boş yada Şifre rakamdan başka karakter içeriyor
+                    </div>
+                    <div class="valid-feedback">
+                      Kriterlere Uyuyor
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-lg-4 mb-3">
+                    <input type="submit"  class="btn btn-primary" value="Gönder">
+                  </div>
+                </div>        
+            </form>
+        </div>
+    </section>
+
+    <footer id="login-footer">
         <div class="footer-content container">
             <p>Copyright &copy; 2023. All Rights Reserved.</p>
             <div class="social">
@@ -57,5 +105,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/type-writer.js"></script>
+
 </body>
 </html> 
