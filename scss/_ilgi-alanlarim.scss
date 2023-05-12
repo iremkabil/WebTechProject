@@ -1,0 +1,33 @@
+#ilgi_alanlarim{
+
+    &-a{
+        background-color:hsla(0, 100%, 90%, 0.3) !important; 
+    }
+    &-b{
+        .info{
+            border: 1px solid $medium-color;
+            padding: .5rem;
+            border-radius: 2px; 
+            display: grid;
+            gap: 1.2rem;
+
+            .left{
+                padding-left: 10rem;
+            }
+            .right{
+                padding-right: 10rem;
+            }
+        }
+        .logo{
+            font-size: 3rem;
+            margin-left: 3rem;
+            text-align: end !important;
+
+        }
+        .header h2{
+            text-align: start ;
+            margin-top: 1rem;
+        }
+        
+    }
+}

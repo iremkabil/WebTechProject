@@ -3,14 +3,10 @@
         .form-fields {
             display: grid;
             grid-template-areas:
-                // 'name email password'
-                // 'subject phone'
-                // 'message message'
-                // 'button button'
                 'name phone'
                 'email password'
                 'subject message'
-                'cinsiyet sehir'
+                'cinsiyet sehirler'
                 'diller diller'
                 'button button';
             gap: 1rem;
@@ -38,7 +34,7 @@
                 }
             }
             .sehir{
-                grid-area: sehir;
+                grid-area: sehirler;
             }
 
             .btn-dark {
@@ -51,6 +47,19 @@
                 grid-area: diller;
                 input{
                     margin-left: 1rem;
+                }
+            }
+            .form-row{
+                display: flex;
+                .reset input{
+                    float: right;
+
+                }
+                .submit input{
+                    float: left;
+                }
+                .col-6{
+                    width: 100%;
                 }
             }
         }

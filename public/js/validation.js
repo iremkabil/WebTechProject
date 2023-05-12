@@ -19,12 +19,12 @@ function validate() {
    }
    if( document.myForm.sifre.value == "" ) {
       alert( "Şifre Eksik!" );
-      document.myForm.sifre.focus() ;
+      document.myForm.password.focus() ;
       return false;
    }
    if( false== Number.isInteger(parseInt(Number(document.myForm.sifre.value)))  ) {
       alert( "Sadece sayı girin!" );
-      document.myForm.sifre.focus() ;
+      document.myForm.password.focus() ;
       return false;
    }
   

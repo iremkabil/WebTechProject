@@ -2,40 +2,40 @@
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 function emailV(){
 
-if(document.myForm.email.value.match(mailformat)){
+    if(document.myForm.email.value.match(mailformat)){
 
-    if(document.myForm.email.classList.contains("is-invalid"))
-    {
-        document.myForm.email.classList.remove("is-invalid");
+        if(document.myForm.email.classList.contains("is-invalid"))
+        {
+            document.myForm.email.classList.remove("is-invalid");
+        }
+        document.myForm.email.classList.add("is-valid");
     }
-    document.myForm.email.classList.add("is-valid");
-}
-else
-{
-    if(document.myForm.email.classList.contains("is-valid"))
+    else
     {
-        document.myForm.email.classList.remove("is-valid");
+        if(document.myForm.email.classList.contains("is-valid"))
+        {
+            document.myForm.email.classList.remove("is-valid");
+        }
+        document.myForm.email.classList.add("is-invalid");
     }
-    document.myForm.email.classList.add("is-invalid");
-}
 }
 
 function sifreV(){
 
-    if(Number.isInteger(parseInt(Number(document.myForm.sifre.value)))==true&&document.myForm.sifre.value!=""){
+    if(Number.isInteger(parseInt(Number(document.myForm.password.value)))==true&&document.myForm.password.value!=""){
     
-        if(document.myForm.sifre.classList.contains("is-invalid"))
+        if(document.myForm.password.classList.contains("is-invalid"))
         {
-            document.myForm.sifre.classList.remove("is-invalid");
+            document.myForm.password.classList.remove("is-invalid");
         }
-        document.myForm.sifre.classList.add("is-valid");
+        document.myForm.password.classList.add("is-valid");
     }
     else
     {
-        if(document.myForm.sifre.classList.contains("is-valid"))
+        if(document.myForm.password.classList.contains("is-valid"))
         {
-            document.myForm.sifre.classList.remove("is-valid");
+            document.myForm.password.classList.remove("is-valid");
         }
-        document.myForm.sifre.classList.add("is-invalid");
+        document.myForm.password.classList.add("is-invalid");
     }
-    }
+}

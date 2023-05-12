@@ -13,10 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>İletisim</title>
 </head>
 <body>
-        
+    
     <!-- header -->
     <header id="header__inner">
         <div class="main">
@@ -48,42 +48,55 @@
           </div>
           <div class="row my-1 ">
             <div class="col-lg-12 my-1">
-            <table   class="table table-striped table-dark my-table" >
-            	<tr>
-            	   <td >Ad</td>
-            	   <td ><?php echo $_POST["ad"]?></td>
-            	</tr>
-              <tr>
-                <td>Mail</td>
-                <td ><?php echo $_POST["email"]?></td>
-            	</tr>
-              <tr>
-                <td>Sifre</td>
-                <td ><?php echo $_POST["sifre"]?></td>
-              </tr>
-              <tr>
-                <td>Hobiler</td>
-                <td >
-                  <?php if(isset($_POST['sports']))
-                  {
-                    $check=implode("-",$_POST['sports']);
-                    echo($check);
-                  }
-                  ?>
-              </td>
-              </tr>
-              <tr>
-                <td>En Sevilen Programlama Dili</td>
-                <td ><?php echo $_POST["language"]?></td>
-              </tr>
-              <tr>
-                <td>Adres</td>
-                <td ><?php echo $_POST["addres"]?></td>
-              </tr>
-              <tr>
-                <td>Yaşadığınız Şehir</td>
-                <td ><?php echo $_POST["sehirler"]?></td>
-              </tr>
+                <table class="table table-striped table-dark my-table" >
+                    <tr>
+                        <td >Name</td>
+                        <td ><?php echo $_POST["fullname"]?></td>
+                    </tr>
+                    <tr>
+                        <td >Phone</td>
+                        <td ><?php echo $_POST["phone"]?></td>
+                    </tr>
+                    <tr>
+                        <td>Mail</td>
+                        <td ><?php echo $_POST["email"]?></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td ><?php echo $_POST["password"]?></td>
+                    </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td ><?php echo $_POST["subject"]?></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td ><?php echo $_POST["message"]?></td>
+                    </tr>
+              
+                    <tr>
+                        <td>Kullandığınız programlama dilleri</td>
+                        <td >
+                            <?php if(isset($_POST['language']))
+                                {
+                                    $check=implode("-",$_POST['language']);
+                                    echo($check);
+                                }
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cinsiyet</td>
+                        <td ><?php echo $_POST["gender"]?></td>
+                    </tr>
+                    <tr>
+                        <td>Adres</td>
+                        <td ><?php echo $_POST["address"]?></td>
+                    </tr>
+                    <tr>
+                        <td>Yaşadığınız Şehir</td>
+                        <td ><?php echo $_POST["sehirler"]?></td>
+                    </tr>
                 </table>
               </div>
             </div>
@@ -114,6 +127,7 @@
             </div>
         </div>
     </section>
+
     <footer id="main-footer">
         <div class="footer-content container">
             <p>Copyright &copy; 2023. All Rights Reserved.</p>

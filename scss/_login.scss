@@ -2,9 +2,14 @@
     .form-login{
         gap: 1rem;
         margin-bottom: 1rem;
+        width: 100%;
+        .from-col{
+            text-align: center;
+        }
         .input {
             padding: .5rem 1rem ;
         }
+
     }
 
 }
@@ -33,7 +38,6 @@
             padding: 0.6rem;
             transition: all 1s;
             color: #fff;
-
 
             &:hover {
                 background-color: $primary-color;

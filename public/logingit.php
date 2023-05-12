@@ -1,12 +1,12 @@
 <?php 
   
   $myemail="CC@hotmail.com";
-  $mysifre="123";
+  $mypassword="123";
   $email = $_POST['email'];
-  $sifre = $_POST['sifre'];
+  $password = $_POST['password'];
   $namen=explode("@",$email);
   $signal=false;
-  if($email==$myemail && $mysifre==$sifre)
+  if($email==$myemail && $mypassword==$password)
   {
     $signal=true;
     
@@ -94,7 +94,7 @@
               <div class="form-row my-3">
                 <div class="col-lg-4 mb-3">
                   <label for="password">Şifre:</label>
-                  <input type="password"class="form-control" name="sifre" onchange="sifreV();">
+                  <input type="password"class="form-control" name="password" onchange="sifreV();">
                   <div class="invalid-feedback">
                     Alan boş yada Şifre rakamdan başka karakter içeriyor
                   </div>
@@ -105,7 +105,7 @@
               </div>
               <div class="form-row">
                 <div class="col-lg-12 mb-3">
-                  <input type="submit"  class="btn btn-primary" value="Gonder">
+                  <input type="submit"  class="btn btn-primary" value="Gönder">
                 </div>
               </div>        
             </form>
