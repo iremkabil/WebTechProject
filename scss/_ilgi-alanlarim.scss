@@ -2,6 +2,13 @@
 
     &-a{
         background-color:hsla(0, 100%, 90%, 0.3) !important; 
+        text-align: start !important;
+        .list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
     }
     &-b{
         .info{
@@ -28,6 +35,12 @@
             text-align: start ;
             margin-top: 1rem;
         }
-        
+        .content{
+            text-align: start !important;
+            p{
+                width: 80%;
+                float: right;
+            }
+        }
     }
 }

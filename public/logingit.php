@@ -13,9 +13,6 @@
   }else {
     $signal=false;
     header("refresh:5;url=login.html");
-
-    
-    
     
     //header("Location:login.html");
   }
@@ -64,17 +61,6 @@
             <h2 class="section-title">Login</h2>
             <div class="border-bottom"></div>
             <p class="lead">Lütfen giriş yapınız...</p>
-            <!-- <form action="">
-                <div class="form-login">
-                    <div class="my-4">
-                        Email: CC@hotmail.com Şifre: 123
-                    </div>
-                    <input type="email" class="email input" name="email" id="email" placeholder="Email">
-
-                    <input type="password" class="password input" name="password" id="password" placeholder="password">
-
-                </div>
-            </form> -->
 
             <form action="logingit.php" name="myForm" class="needs-validation" onsubmit = "return validate();"  method="POST">
               <div class="form-row my-3">Email: CC@hotmail.com   Şifre: 123
@@ -110,7 +96,7 @@
               </div>        
             </form>
 
-            <!-- <button type="submit" class="btn-dark">Submit</button> -->
+            
 
         </div>
     </section>
@@ -118,7 +104,6 @@
       <div class="bg-dark container border border-secondary rounded shadow-lg">
         <div class="row my-3 ">
           <div class="col-lg-12 my-4">
-          <!-- align="center" css'te ver -->
             <h1 class="display-4 text-white"  >
                 <?php
                   if($signal==true)
