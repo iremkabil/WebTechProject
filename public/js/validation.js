@@ -11,6 +11,26 @@ function validate() {
     document.myForm.email.focus() ;
     return false;
    }
+   if( document.myForm.phone.value == "" ) {
+      alert( "Telefon numarası Eksik!" );
+      document.myForm.phone.focus() ;
+      return false;
+   }
+   if( document.myForm.subject.value == "" ) {
+      alert( "Konu Eksik!" );
+      document.myForm.subject.focus() ;
+      return false;
+   }
+   if( document.myForm.message.value == "" ) {
+      alert( "Mesaj Eksik!" );
+      document.myForm.message.focus() ;
+      return false;
+   }
+   if( document.myForm.sehirler.value == "" ) {
+      alert( "Şehir seçmediniz!" );
+      document.myForm.sehirler.focus() ;
+      return false;
+   }
    else{
       if(document.myForm.email.value.match(mailformat))
       {
@@ -28,18 +48,5 @@ function validate() {
       return false;
    }
   
-  
-  /*
-  if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
-     document.myForm.Zip.value.length != 5 ) {
-     
-     alert( "Please provide a zip in the format #####." );
-     document.myForm.Zip.focus() ;
-     return false;
-  }
-  if( document.myForm.Country.value == "-1" ) {
-     alert( "Please provide your country!" );
-     return false;
-  }*/
   return bool ;
 }
