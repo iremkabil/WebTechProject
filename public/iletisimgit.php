@@ -77,11 +77,15 @@
                     <tr>
                         <td>Kullandığınız programlama dilleri</td>
                         <td >
-                            <?php if(isset($_POST['language']))
-                                {
-                                    $check=implode("-",$_POST['language']);
-                                    echo($check);
-                                }
+                            <?php 
+                                if(isset($_POST['language']))
+                                    {
+                                        // $check=implode("-",$_POST['language']);
+                                        // echo($check);
+                                        $checkedLanguages = $_POST['language'];
+                                        $check = implode(" - ", $checkedLanguages);
+                                        echo ($check);
+                                    }
                             ?>
                         </td>
                     </tr>
@@ -90,12 +94,15 @@
                         <td ><?php echo $_POST["gender"]?></td>
                     </tr>
                     <tr>
-                        <td>Adres</td>
-                        <td ><?php echo $_POST["address"]?></td>
-                    </tr>
-                    <tr>
                         <td>Yaşadığınız Şehir</td>
-                        <td ><?php echo $_POST["sehirler"]?></td>
+                        <td>
+                            <?php 
+                                if(isset($_POST['sehirler'])) {
+                                    $sehir = $_POST['sehirler'];
+                                    echo ($sehir) ;
+                                }
+                             ?>
+                        </td>
                     </tr>
                 </table>
               </div>
