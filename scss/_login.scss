@@ -2,13 +2,28 @@
     .form-login{
         gap: 1rem;
         margin-bottom: 1rem;
-        width: 100%;
+        
+        
+        .form-card{
+            display: flex !important;
+            justify-content: center;
+            width: 50% !important;
+
+            input {
+                padding: .5rem 1rem ;
+            }
+        }
+        
+        .form-email{
+            margin: auto !important;
+        }
+        .form-password{
+            margin: auto !important;
+        }
         .from-col{
             text-align: center;
         }
-        .input {
-            padding: .5rem 1rem ;
-        }
+        
 
     }
 

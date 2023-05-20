@@ -47,10 +47,10 @@
             <p class="lead">Lütfen giriş yapınız...</p>
             
             <form action="logingit.php" name="myForm" class="needs-validation form-login" onsubmit = "return validate();"  method="POST">
-                <div class="form-row my-3">Email: b1812100001@sakarya.edu.tr  Şifre: 1812100001
+                <div class="form-row my-3">Email: cc@sakarya.edu.tr  Şifre: g1812100001
                 </div>
                 <div class="form-row my-3">
-                  <div class="from-col col-lg-4 my-3">
+                  <div class="form-email form-col col-lg-4 my-3" style="margin: auto;">
                     <label for="email">Email:</label>
                     <input type="text" class="form-control" name="email" id="email" onchange="emailV();">
                     <div class="valid-feedback">
@@ -60,7 +60,8 @@
                       Alan boş yada Girdiğiniz bilgiler E mail formatında DEĞİL!!
                     </div>
                   </div>
-                  <div class="from-col col-lg-4 mb-3">
+
+                  <div class="form-password form-col col-lg-4 mb-3" style="margin: auto;">
                     <label for="password">Şifre:</label>
                     <input type="password"class="form-control" name="password" onchange="sifreV();">
                     <div class="invalid-feedback">
@@ -71,9 +72,10 @@
                     </div>
                   </div>
                 </div>
+                
             
                 <div class="form-row">
-                  <div class="col-lg-4 mb-3">
+                  <div class="col-lg-4 mb-3" style="margin: auto;">
                     <input type="submit"  class="btn btn-primary" value="Gönder">
                   </div>
                 </div>        
