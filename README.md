@@ -1,4 +1,4 @@
-# WebTechProject
+# Web TEKNOLOJİLERİ DERSİ PROJE ÖDEVİ
 2022-2023 BAHAR DÖNEMİ WEB TEKNOLOJİLERİ DERSİ PROJE ÖDEVİ
 
 # Proje Amacı <br>
