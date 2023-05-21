@@ -16,8 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="validation.js"></script>
-    <script src="changeValidate.js"></script>
+
     <!-- header -->
     <header id="header__inner">
         <div class="main">
@@ -47,33 +46,41 @@
             <p class="lead">Lütfen giriş yapınız...</p>
             
             <form action="logingit.php" name="myForm" class="needs-validation form-login" onsubmit = "return validate();"  method="POST">
-                <div class="form-row my-3">Email: cc@sakarya.edu.tr  Şifre: g1812100001
+
+                <div class="form-row my-3">Email: g1812100001@sakarya.edu.tr <br /> Şifre: g1812100001
                 </div>
+
                 <div class="form-row my-3">
                   <div class="form-email form-col col-lg-4 my-3" style="margin: auto;">
+
                     <label for="email">Email:</label>
-                    <input type="text" class="form-control" name="email" id="email" onchange="emailV();">
+                    <input type="text" class="form-control" name="email" id="email" onchange="emailV();" placeholder="@sakarya.edu.tr">
+
                     <div class="valid-feedback">
                       Kriterlere uyuyor
                     </div>
+
                     <div class="invalid-feedback">
-                      Alan boş yada Girdiğiniz bilgiler E mail formatında DEĞİL!!
+                      Alan boş yada girdiğiniz bilgiler e-mail formatında DEĞİL!!
                     </div>
+
                   </div>
 
                   <div class="form-password form-col col-lg-4 mb-3" style="margin: auto;">
+
                     <label for="password">Şifre:</label>
-                    <input type="password"class="form-control" name="password" onchange="sifreV();">
-                    <div class="invalid-feedback">
-                      Alan boş yada Şifre rakamdan başka karakter içeriyor
-                    </div>
+                    <input type="password"class="form-control" name="password" id="password" placeholder="Öğrenci No" onchange="sifreV();">
+
                     <div class="valid-feedback">
                       Kriterlere Uyuyor
                     </div>
+
+                    <div class="invalid-feedback">
+                      Hatalı Giriş
+                    </div>
                   </div>
                 </div>
-                
-            
+                            
                 <div class="form-row">
                   <div class="col-lg-4 mb-3" style="margin: auto;">
                     <input type="submit"  class="btn btn-primary" value="Gönder">
@@ -100,7 +107,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/type-writer.js"></script>
-    <script src="js/changeValidate.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/validation.js"></script>
 
 </body>
 </html> 

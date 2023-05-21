@@ -1,5 +1,5 @@
 function validate() {
-  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var mailformat = /^[a-z]\d{10}@sakarya\.edu\.tr$/;
   var bool=false;   
   if( document.myForm.name.value == "" ) {
      alert( "Kullanıcı Adı Eksik!" );
@@ -32,19 +32,19 @@ function validate() {
       return false;
    }
    else{
-      if(document.myForm.email.value.match(mailformat))
+      if(document.getElementById("email").value.match(mailformat))
       {
          bool= true;
       }
    }
-   if( document.myForm.sifre.value == "" ) {
+   if( document.getElementById("password").value == "" ) {
       alert( "Şifre Eksik!" );
-      document.myForm.password.focus() ;
+      document.getElementById("password").focus() ;
       return false;
    }
-   if( false== Number.isInteger(parseInt(Number(document.myForm.sifre.value)))  ) {
+   if( false== Number.isInteger(parseInt(Number(document.getElementById("password").value)))  ) {
       alert( "Sadece sayı girin!" );
-      document.myForm.password.focus() ;
+      document.getElementById("password").focus() ;
       return false;
    }
   
